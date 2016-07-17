@@ -1,6 +1,9 @@
 <html>
 <head>
     <style>
+      body {
+        float: left;
+      }
       @media (min-width: 1071px) {
         img {
           width: 100%;
@@ -13,14 +16,12 @@
         }
       }
     </style>
-    <script src="https://cdn.smooch.io/smooch.min.js"></script>
-    <script>
-        Smooch.init({appToken: '{{appToken}}' });
-    </script>
 </head>
 <body style='margin: 0'>
-  <div>
-    <img src='http://i68.tinypic.com/r2oj2b.jpg'><img/>
-  </div>
+  <img src='http://i68.tinypic.com/r2oj2b.jpg'><img/>
+  <script src="https://cdn.smooch.io/smooch.min.js"></script>
+  <script>
+      Smooch.init({appToken: '{{appToken}}' });
+  </script>
 </body>
 </html>
